@@ -232,7 +232,7 @@
     "@mfaTryAnotherMethod": {
         "description": "Link to switch to a different MFA method."
     },
-    "mfaUseSecurityKey": "Llave de seguridad / Llave de acceso en su lugar",
+    "mfaUseSecurityKey": "Prueba la llave de seguridad / llave de acceso en su lugar",
     "@mfaUseSecurityKey": {
         "description": "Link to switch to WebAuthn from code entry."
     },
@@ -640,7 +640,7 @@
     "@passkeyDeviceNotSupported": {
         "description": "Error when device does not support passkeys."
     },
-    "passkeyDomainNotAssociated": "Las llaves de acceso no están configuradas para esta app. En su lugar, inicia sesión con tu correo y contraseña.",
+    "passkeyDomainNotAssociated": "Las llaves de acceso no están configuradas para esta aplicación. En su lugar, inicia sesión con tu correo y contraseña.",
     "@passkeyDomainNotAssociated": {
         "description": "Error when passkey domain association is missing."
     },
@@ -648,7 +648,7 @@
     "@passkeyTimeout": {
         "description": "Error when passkey authentication times out."
     },
-    "passkeyNotAvailable": "Las llaves de acceso no están disponibles para esta app. En su lugar, inicia sesión con tu correo y contraseña.",
+    "passkeyNotAvailable": "Las llaves de acceso no están disponibles para esta aplicación. En su lugar, inicia sesión con tu correo y contraseña.",
     "@passkeyNotAvailable": {
         "description": "Error for unknown passkey provider errors (e.g. TYPE_UNKNOWN)."
     },
@@ -868,7 +868,7 @@
     "@notificationOnlyMentions": {
         "description": "Radio option for receiving only mention notifications."
     },
-    "notificationNothing": "Nada",
+    "notificationNothing": "Ninguna",
     "@notificationNothing": {
         "description": "Radio option for receiving no notifications."
     },
@@ -2294,7 +2294,7 @@
     "@disable": {
         "description": "Generic disable button label."
     },
-    "delete": "Borrar",
+    "delete": "Eliminar",
     "@delete": {
         "description": "Generic delete button label."
     },
@@ -4288,7 +4288,7 @@
     "@connectionVerifyButton": {
         "description": "Primary button on the verify step."
     },
-    "connectionBack": "Atrás",
+    "connectionBack": "Volver",
     "@connectionBack": {
         "description": "Secondary button on the verify step that returns to step 1."
     },
@@ -4989,7 +4989,7 @@
     "@accessibilityDmMessagePreviewUnreadOnlyDescription": {
         "description": "Radio option description for showing DM previews only when unread."
     },
-    "accessibilityDmMessagePreviewNoneName": "Ninguna",
+    "accessibilityDmMessagePreviewNoneName": "Ninguno",
     "@accessibilityDmMessagePreviewNoneName": {
         "description": "Radio option name for hiding DM message previews."
     },
@@ -6000,7 +6000,7 @@
     "@iarActionBanUserDescription": {
         "description": "Action card description (moderator-only) for banning the reported user."
     },
-    "iarActionBanUserButton": "Expulsar",
+    "iarActionBanUserButton": "Banear",
     "@iarActionBanUserButton": {
         "description": "Trailing button label on the ban-user action card."
     },
@@ -6042,7 +6042,7 @@
     "@iarAlreadyReportedBody": {
         "description": "Body shown on the IAR success step when the message had already been reported by this user (HTTP 409)."
     },
-    "iarBackButton": "Atrás",
+    "iarBackButton": "Volver",
     "@iarBackButton": {
         "description": "Footer button label that returns the user to the previous IAR step."
     },
@@ -7103,7 +7103,7 @@
     "@guildNavbarNameLabel": {
         "description": "Label for name input fields in guild navbar modals."
     },
-    "guildNavbarNewChannelHint": "new-channel",
+    "guildNavbarNewChannelHint": "nuevo-canal",
     "@guildNavbarNewChannelHint": {
         "description": "Placeholder hint for new channel name input."
     },
@@ -7111,7 +7111,7 @@
     "@guildNavbarUrlLabel": {
         "description": "Label for URL input in link channel creation."
     },
-    "guildNavbarUrlHint": "https://example.com",
+    "guildNavbarUrlHint": "https://ejemplo.com",
     "@guildNavbarUrlHint": {
         "description": "Placeholder hint for URL input in link channel creation."
     },
@@ -7430,7 +7430,7 @@
     "@guildMenuSettingsInviteLinks": {
         "description": "Community settings tab for invite links."
     },
-    "guildMenuSettingsBans": "Prohibiciones",
+    "guildMenuSettingsBans": "Baneos",
     "@guildMenuSettingsBans": {
         "description": "Community settings tab for banned members."
     },
@@ -9099,5 +9099,9 @@
     "guildSettingsAuditLogFilterAction": "Filtrar por acción",
     "@guildSettingsAuditLogFilterAction": {
         "description": "Label of the action-type filter dropdown in the activity log tab."
+    },
+    "sessionExpiredToast": "Tu sesión ha caducado. Por favor, inicia sesión de nuevo.",
+    "@sessionExpiredToast": {
+        "description": "Toast shown when the stored session is rejected by the server and the user is signed out to the login screen."
     }
 }
