@@ -8112,6 +8112,10 @@ class FluxerLocalizationsEs419 extends FluxerLocalizationsEs {
   String get gatewayConnectedToast => 'Conexión Restablecida';
 
   @override
+  String get sessionExpiredToast =>
+      'Tu sesión ha caducado. Por favor, inicia sesión de nuevo.';
+
+  @override
   String splashStartupFailed(String error) {
     return 'Error al iniciar: $error';
   }
@@ -8273,7 +8277,7 @@ class FluxerLocalizationsEs419 extends FluxerLocalizationsEs {
 
   @override
   String get mfaUseSecurityKey =>
-      'Llave de seguridad / Llave de acceso en su lugar';
+      'Prueba la llave de seguridad / llave de acceso en su lugar';
 
   @override
   String get accountSelectorTitle => 'Elige una cuenta';
@@ -8590,7 +8594,7 @@ class FluxerLocalizationsEs419 extends FluxerLocalizationsEs {
 
   @override
   String get passkeyDomainNotAssociated =>
-      'Las llaves de acceso no están configuradas para esta app. En su lugar, inicia sesión con tu correo y contraseña.';
+      'Las llaves de acceso no están configuradas para esta aplicación. En su lugar, inicia sesión con tu correo y contraseña.';
 
   @override
   String get passkeyTimeout =>
@@ -8598,7 +8602,7 @@ class FluxerLocalizationsEs419 extends FluxerLocalizationsEs {
 
   @override
   String get passkeyNotAvailable =>
-      'Las llaves de acceso no están disponibles para esta app. En su lugar, inicia sesión con tu correo y contraseña.';
+      'Las llaves de acceso no están disponibles para esta aplicación. En su lugar, inicia sesión con tu correo y contraseña.';
 
   @override
   String get passkeyFailed =>
@@ -8772,7 +8776,7 @@ class FluxerLocalizationsEs419 extends FluxerLocalizationsEs {
   String get notificationOnlyMentions => 'Solo menciones';
 
   @override
-  String get notificationNothing => 'Nada';
+  String get notificationNothing => 'Ninguna';
 
   @override
   String get notificationSuppressEveryone => 'Silenciar @everyone y @here';
@@ -9887,7 +9891,7 @@ class FluxerLocalizationsEs419 extends FluxerLocalizationsEs {
   String get disable => 'Desactivar';
 
   @override
-  String get delete => 'Borrar';
+  String get delete => 'Eliminar';
 
   @override
   String get save => 'Guardar';
@@ -11452,7 +11456,7 @@ class FluxerLocalizationsEs419 extends FluxerLocalizationsEs {
   String get connectionVerifyButton => 'Verificar';
 
   @override
-  String get connectionBack => 'Atrás';
+  String get connectionBack => 'Volver';
 
   @override
   String get connectionEditTitle => 'Editar conexión';
@@ -12079,7 +12083,7 @@ class FluxerLocalizationsEs419 extends FluxerLocalizationsEs {
       'Mostrar solo vistas previas de mensajes en DMs con mensajes no leídos';
 
   @override
-  String get accessibilityDmMessagePreviewNoneName => 'Ninguna';
+  String get accessibilityDmMessagePreviewNoneName => 'Ninguno';
 
   @override
   String get accessibilityDmMessagePreviewNoneDescription =>
@@ -12888,7 +12892,7 @@ class FluxerLocalizationsEs419 extends FluxerLocalizationsEs {
       'Abre el diálogo de expulsión para esta comunidad.';
 
   @override
-  String get iarActionBanUserButton => 'Expulsar';
+  String get iarActionBanUserButton => 'Banear';
 
   @override
   String get iarActionBanUserBannedButton => 'Expulsado';
@@ -12920,7 +12924,7 @@ class FluxerLocalizationsEs419 extends FluxerLocalizationsEs {
       'Ya has reportado este mensaje. Nuestro equipo de seguridad lo está revisando.';
 
   @override
-  String get iarBackButton => 'Atrás';
+  String get iarBackButton => 'Volver';
 
   @override
   String get iarContinueButton => 'Continuar';
@@ -13746,13 +13750,13 @@ class FluxerLocalizationsEs419 extends FluxerLocalizationsEs {
   String get guildNavbarNameLabel => 'Nombre';
 
   @override
-  String get guildNavbarNewChannelHint => 'new-channel';
+  String get guildNavbarNewChannelHint => 'nuevo-canal';
 
   @override
   String get guildNavbarUrlLabel => 'URL';
 
   @override
-  String get guildNavbarUrlHint => 'https://example.com';
+  String get guildNavbarUrlHint => 'https://ejemplo.com';
 
   @override
   String get guildNavbarCreateCategory => 'Crear categoría';
@@ -13992,7 +13996,7 @@ class FluxerLocalizationsEs419 extends FluxerLocalizationsEs {
   String get guildMenuSettingsInviteLinks => 'Enlaces de invitación';
 
   @override
-  String get guildMenuSettingsBans => 'Prohibiciones';
+  String get guildMenuSettingsBans => 'Baneos';
 
   @override
   String get guildSettingsNoPermission =>
