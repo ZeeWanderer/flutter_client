@@ -1,13 +1,13 @@
 import 'dart:async';
-import 'dart:io' show Platform;
 import 'dart:ui' show PlatformDispatcher;
 
 import 'package:app_settings/app_settings.dart';
-import 'package:flutter/foundation.dart' show kIsWeb;
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
+import 'package:fluxer_app/core/talker.dart';
 import 'package:fluxer_app/core/theme/fluxer_theme_extension.dart';
 import 'package:fluxer_app/features/profile/providers/user_settings_status_provider.dart';
+import 'package:fluxer_app/features/settings/providers/app_language_settings_capability_provider.dart';
 import 'package:fluxer_app/features/settings/providers/appearance_preferences_provider.dart';
 import 'package:fluxer_app/features/settings/providers/time_format_preference_provider.dart';
 import 'package:fluxer_app/features/ui/ui.dart';
@@ -69,6 +69,14 @@ class UserLanguageAndTime extends ConsumerWidget {
       }
     }
 
+    Future<void> openLanguageSettings() async {
+      try {
+        await AppSettings.openAppSettings(type: AppSettingsType.appLocale);
+      } on Object catch (error, stackTrace) {
+        talker.handle(error, stackTrace);
+      }
+    }
+
     String autoDescription() {
       final bool useSystemLocale = appearance.useSystemLocaleForTimeFormat;
       final String effectiveLocale = useSystemLocale ? systemLocale : appLocale;
@@ -97,7 +105,7 @@ class UserLanguageAndTime extends ConsumerWidget {
 
     // TODO: Add desktop language picker
     final bool showLanguageSection =
-        !kIsWeb && (Platform.isIOS || Platform.isAndroid);
+        ref.watch(appLanguageSettingsCapabilityProvider).asData?.value ?? false;
 
     return SingleChildScrollView(
       controller: scrollController,
@@ -153,9 +161,7 @@ class UserLanguageAndTime extends ConsumerWidget {
               children: [
                 FluxerButton.primary(
                   label: l10n.languageAndTimeOpenLanguageSettings,
-                  onPressedAsync: () => AppSettings.openAppSettings(
-                    type: AppSettingsType.appLocale,
-                  ),
+                  onPressedAsync: openLanguageSettings,
                 ),
               ],
             ),
