@@ -37,22 +37,24 @@
 	</array>
 	<key>CFBundleVersion</key>
 	<string>$(FLUTTER_BUILD_NUMBER)</string>
+	<key>ITSAppUsesNonExemptEncryption</key>
+	<false/>
 	<key>LSRequiresIPhoneOS</key>
 	<true/>
 	<key>NSCameraUsageDescription</key>
 	<string>Take photos to send in a chat.</string>
+	<key>NSLocationAlwaysAndWhenInUseUsageDescription</key>
+	<string>Required by a 3rd Party package but never requested or used.</string>
+	<key>NSLocationWhenInUseUsageDescription</key>
+	<string>Fluxer does not use your location. A bundled library references location APIs, which requires this entry for App Store submission.</string>
 	<key>NSMicrophoneUsageDescription</key>
 	<string>Leave voice messages, audio, and video calls.</string>
 	<key>NSPhotoLibraryUsageDescription</key>
 	<string>Share photos from your library in a chat.</string>
-	<key>NSLocationWhenInUseUsageDescription</key>
-	<string>Fluxer does not use your location. A bundled library references location APIs, which requires this entry for App Store submission.</string>
 	<key>RTCAppGroupIdentifier</key>
-	<string>group.com.fluxer</string>
+	<string>group.com.fluxer.custom</string>
 	<key>RTCScreenSharingExtension</key>
 	<string>$(PRODUCT_BUNDLE_IDENTIFIER).BroadcastExtension</string>
-	<key>NSLocationAlwaysAndWhenInUseUsageDescription</key>
-	<string>Required by a 3rd Party package but never requested or used.</string>
 	<key>UIApplicationSceneManifest</key>
 	<dict>
 		<key>UIApplicationSupportsMultipleScenes</key>
@@ -100,7 +102,5 @@
 		<string>UIInterfaceOrientationLandscapeLeft</string>
 		<string>UIInterfaceOrientationLandscapeRight</string>
 	</array>
-	<key>ITSAppUsesNonExemptEncryption</key>
-	<false/>
 </dict>
 </plist>
