@@ -22,13 +22,11 @@ enum GuildSettingsTab {
 }
 
 const List<GuildSettingsTab> _comingSoonTabs = <GuildSettingsTab>[
-  GuildSettingsTab.roles,
   GuildSettingsTab.emoji,
   GuildSettingsTab.stickers,
   GuildSettingsTab.webhooks,
   GuildSettingsTab.discovery,
   GuildSettingsTab.members,
-  GuildSettingsTab.invites,
 ];
 
 bool isGuildSettingsTabComingSoon(GuildSettingsTab tab) {
